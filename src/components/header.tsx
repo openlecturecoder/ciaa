@@ -8,10 +8,10 @@ import headerLogo from "../assets/imgs/logo.png";
 type compMap = Array<{[key : string] : string}>;
 
 const headerMenuMap : compMap = [
-    {"title": "사이트 소개", "link": "/programming-language"},
-    {"title": "개발자 소개", "link": "/work-history"},
-    {"title": "작품 보기", "link": "/personal-info"},
-    {"title": "연락하기", "link": "/#"},
+    {"title": "Dev", "link": "/dev"},
+    {"title": "About", "link": "/about"},
+    {"title": "Arts", "link": "/arts"},
+    {"title": "Contact", "link": "/contact"},
 ];
 
 const headerBurderAddedMenuMap : compMap = [
@@ -42,7 +42,7 @@ const Header = () : JSX.Element => {
                 </div>
 
                 {/* Menu */}
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex space-x-8 lg:space-x-20 xl:space-x-28">
                     {
                         headerMenuMap.map((key) => {
                             return(
@@ -60,7 +60,7 @@ const Header = () : JSX.Element => {
                 {/* SNS */}
                 <div className="hidden md:flex space-x-4">
                     <button className="bg-slate-700 hover:bg-slate-900 text-white py-2 px-4 rounded">
-                        SNS
+                        X
                     </button>
                 </div>
 
